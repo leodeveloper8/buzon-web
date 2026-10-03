@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buzón — gestor de correo de escritorio</title>
+  <meta name="description" content="Buzón es un gestor de correo de escritorio para Windows, minimalista y manejable con teclado, que reúne tus cuentas de Gmail y Outlook.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --papel: #f7f6f2; --hoja: #ffffff; --tinta: #1d1c1a; --grafito: #6b675f; --linea: #e7e4dd; --acento: #2f4ad0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --papel: #151514; --hoja: #1c1c1a; --tinta: #eceae4; --grafito: #a29d94; --linea: #2c2b28; --acento: #8fa3ff; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--papel); color: var(--tinta); font: 17px/1.6 "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, sans-serif; }
+    main { max-width: 720px; margin: 0 auto; padding: 56px 20px 72px; }
+    .marca { display: flex; align-items: center; gap: 12px; font: 600 26px/1 "Segoe UI Variable Display", "Segoe UI", system-ui, sans-serif; }
+    .ranura { width: 26px; height: 8px; border-radius: 4px; background: var(--tinta); box-shadow: 0 5px 0 -2px var(--acento); }
+    h1 { font: 600 clamp(28px, 5vw, 38px)/1.2 "Segoe UI Variable Display", "Segoe UI", system-ui, sans-serif; letter-spacing: -0.02em; margin: 40px 0 12px; }
+    h2 { font-size: 19px; margin: 36px 0 8px; }
+    p, li { color: var(--tinta); }
+    .sub { color: var(--grafito); font-size: 19px; margin: 0; }
+    ul { padding-left: 20px; }
+    kbd { font: 13px "Cascadia Mono", Consolas, monospace; padding: 1px 6px; border: 1px solid var(--linea); border-bottom-width: 2px; border-radius: 4px; background: var(--hoja); }
+    .tarjeta { background: var(--hoja); border: 1px solid var(--linea); border-radius: 12px; padding: 18px 22px; margin-top: 28px; }
+    a { color: var(--acento); }
+    footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--linea); color: var(--grafito); font-size: 15px; }
+    .en { color: var(--grafito); font-size: 15px; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="marca"><span class="ranura" aria-hidden="true"></span>Buzón</div>
+
+    <h1>Tu correo de Gmail y Outlook en una sola bandeja, sin distracciones.</h1>
+    <p class="sub">Buzón es un gestor de correo de escritorio para Windows, minimalista y pensado para usarse con el teclado.</p>
+
+    <h2>Qué hace</h2>
+    <ul>
+      <li>Reúne varias cuentas de correo (Gmail, Outlook, Hotmail y, más adelante, otros proveedores) en una bandeja unificada.</li>
+      <li>Se sincroniza con tu proveedor: si archivas, borras o marcas un mensaje en Buzón, el cambio también se aplica en Gmail u Outlook.</li>
+      <li>Atajos de teclado (<kbd>j</kbd> <kbd>k</kbd> para moverse, <kbd>e</kbd> archivar, <kbd>#</kbd> papelera, <kbd>z</kbd> deshacer), búsqueda con filtros y acciones sobre varios mensajes a la vez.</li>
+    </ul>
+
+    <h2>Cómo se conectan las cuentas</h2>
+    <p>Desde la propia aplicación: eliges <em>Añadir cuenta</em>, inicias sesión en la página oficial de Google o Microsoft en tu navegador y das tu permiso. Buzón recibe un token de acceso; <strong>nunca ve ni guarda tu contraseña</strong>.</p>
+
+    <div class="tarjeta">
+      <strong>Tus datos se quedan en tu equipo.</strong>
+      Buzón no tiene servidores propios: se conecta directamente desde tu ordenador a tu proveedor de correo. Detalles en la
+      <a href="privacidad.html">política de privacidad</a>.
+    </div>
+
+    <p class="en" lang="en">Buzón is a minimalist, keyboard-driven desktop email client for Windows that brings your Gmail and Outlook accounts together. Accounts are connected through the official Google or Microsoft sign-in page; Buzón never sees your password and has no servers of its own. See the <a href="privacidad.html">privacy policy</a> (English summary included).</p>
+
+    <footer>
+      Buzón · Responsable: Leo Ucillos · Contacto: <a href="mailto:lecommerce8@gmail.com">lecommerce8@gmail.com</a> ·
+      <a href="privacidad.html">Política de privacidad</a>
+    </footer>
+  </main>
+</body>
+</html>

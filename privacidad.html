@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de privacidad — Buzón</title>
+  <meta name="description" content="Cómo trata Buzón los datos de tus cuentas de correo.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --papel: #f7f6f2; --hoja: #ffffff; --tinta: #1d1c1a; --grafito: #6b675f; --linea: #e7e4dd; --acento: #2f4ad0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --papel: #151514; --hoja: #1c1c1a; --tinta: #eceae4; --grafito: #a29d94; --linea: #2c2b28; --acento: #8fa3ff; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--papel); color: var(--tinta); font: 17px/1.65 "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, sans-serif; }
+    main { max-width: 760px; margin: 0 auto; padding: 48px 20px 72px; }
+    .volver { color: var(--grafito); text-decoration: none; font-size: 15px; }
+    h1 { font: 600 clamp(28px, 5vw, 36px)/1.2 "Segoe UI Variable Display", "Segoe UI", system-ui, sans-serif; letter-spacing: -0.02em; margin: 24px 0 4px; }
+    .fecha { color: var(--grafito); margin: 0 0 28px; }
+    h2 { font-size: 19px; margin: 34px 0 8px; }
+    ul { padding-left: 20px; }
+    code { font: 14px "Cascadia Mono", Consolas, monospace; background: var(--hoja); border: 1px solid var(--linea); border-radius: 4px; padding: 1px 5px; }
+    .resumen { background: var(--hoja); border: 1px solid var(--linea); border-radius: 12px; padding: 16px 22px; }
+    a { color: var(--acento); }
+    section[lang="en"] { margin-top: 48px; padding-top: 8px; border-top: 1px solid var(--linea); }
+    footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--linea); color: var(--grafito); font-size: 15px; }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="volver" href="./">← Buzón</a>
+    <h1>Política de privacidad</h1>
+    <p class="fecha">Última actualización: 3 de octubre de 2026</p>
+
+    <div class="resumen">
+      <strong>En resumen:</strong> Buzón funciona por completo en tu ordenador. No tiene servidores propios, no recoge estadísticas ni muestra publicidad, y no comparte tus datos con nadie. Solo se conecta a tu proveedor de correo para mostrarte y gestionar tu correo.
+    </div>
+
+    <h2>1. Quién es el responsable</h2>
+    <p>Buzón es una aplicación de escritorio para Windows desarrollada por <strong>Leo Ucillos</strong>. Contacto: <a href="mailto:lecommerce8@gmail.com">lecommerce8@gmail.com</a>.</p>
+
+    <h2>2. Qué datos usa Buzón</h2>
+    <p>Cuando añades una cuenta de Gmail, Buzón te pide permiso mediante el inicio de sesión oficial de Google para el ámbito <code>https://mail.google.com/</code>. Con ese permiso, y solo para mostrarte y gestionar tu correo, Buzón accede a:</p>
+    <ul>
+      <li>Tu dirección de correo electrónico, para identificar la cuenta.</li>
+      <li>Tus mensajes y carpetas o etiquetas: remitentes, destinatarios, asuntos, contenido, adjuntos y estado (leído, destacado…).</li>
+      <li>La capacidad de enviar mensajes en tu nombre cuando tú los redactas y envías, y de mover, archivar o borrar mensajes cuando tú lo ordenas.</li>
+    </ul>
+    <p>Buzón nunca ve ni guarda tu contraseña: el inicio de sesión ocurre en la página de Google y Buzón solo recibe un token de acceso.</p>
+
+    <h2>3. Dónde se guardan</h2>
+    <ul>
+      <li><strong>Tokens de acceso:</strong> en el almacén de credenciales de Windows de tu cuenta de usuario, en tu propio equipo.</li>
+      <li><strong>Copia local del correo:</strong> para que la búsqueda sea rápida y puedas leer sin conexión, Buzón guarda una copia de tus mensajes en tu equipo, dentro de la carpeta de datos de la aplicación de tu usuario.</li>
+      <li><strong>Nada sale de tu equipo</strong> salvo las conexiones directas y cifradas (TLS) entre tu ordenador y tu proveedor de correo (Google o Microsoft).</li>
+    </ul>
+
+    <h2>4. Con quién se comparten</h2>
+    <p>Con nadie. Buzón no vende, no alquila y no transfiere tus datos a terceros, no los usa para publicidad y no los usa para entrenar modelos de inteligencia artificial. El desarrollador no tiene acceso a tu correo.</p>
+
+    <h2>5. Uso limitado de los datos de Google</h2>
+    <p>El uso que Buzón hace de la información recibida de las API de Google, y su transferencia a cualquier otra aplicación, se ajusta a la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos de usuario de los servicios de API de Google</a>, incluidos los requisitos de uso limitado (<em>Limited Use</em>).</p>
+
+    <h2>6. Cómo retirar el acceso y borrar tus datos</h2>
+    <ul>
+      <li><strong>Quitar una cuenta en Buzón</strong> elimina su token y su copia local de tu equipo.</li>
+      <li><strong>Desinstalar Buzón</strong> (Configuración de Windows → Aplicaciones) elimina la aplicación; puedes borrar también su carpeta de datos.</li>
+      <li>En cualquier momento puedes revocar el acceso desde <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> (Google) o <a href="https://account.live.com/consent/Manage">account.live.com/consent/Manage</a> (Microsoft).</li>
+    </ul>
+
+    <h2>7. Cambios en esta política</h2>
+    <p>Si esta política cambia, se publicará aquí con una nueva fecha de actualización.</p>
+
+    <section lang="en">
+      <h2>English summary</h2>
+      <p>Buzón is a Windows desktop email client developed by Leo Ucillos (<a href="mailto:lecommerce8@gmail.com">lecommerce8@gmail.com</a>). It runs entirely on your computer and has no servers of its own, analytics or advertising.</p>
+      <ul>
+        <li>With your consent via Google's sign-in page, Buzón requests the <code>https://mail.google.com/</code> scope solely to display and manage your email at your request: reading, sending, moving, archiving and deleting messages.</li>
+        <li>Access tokens are stored in the Windows Credential Manager on your device; a local copy of your mail is kept on your device for search and offline reading. Buzón never sees or stores your password.</li>
+        <li>Your data is not sold, shared, transferred to third parties, used for advertising or used to train AI models. The developer has no access to your email.</li>
+        <li>Buzón's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</li>
+        <li>Removing an account in Buzón deletes its token and local copy. You can revoke access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+      </ul>
+    </section>
+
+    <footer>Buzón · Leo Ucillos · <a href="mailto:lecommerce8@gmail.com">lecommerce8@gmail.com</a></footer>
+  </main>
+</body>
+</html>
